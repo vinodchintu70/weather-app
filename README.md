@@ -1,7 +1,8 @@
 # 🌤️ Weather App
 
-A responsive weather application built using HTML, CSS, and JavaScript.  
-The app uses the OpenWeatherMap API to fetch real-time weather information based on a searched city or the user's current location.
+A responsive weather application built using HTML, CSS, and JavaScript.
+
+The app uses the OpenWeatherMap API to fetch weather information based on a searched city or the user's current location.
 
 ## 🚀 Features
 
@@ -44,11 +45,17 @@ While building this project, I practiced:
 
 ## 📸 Project Preview
 
-_Add your project screenshot here._
+### 🔎 City Search
+
+![Weather App - City Search](weather-app-city.png)
+
+### 📍 Current Location
+
+![Weather App - Current Location](weather-app-location.png)
 
 ## 🌐 Live Demo
 
-_Add your live demo link here._
+Coming soon.
 
 ## 🔗 GitHub
 
