@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.weatherApp {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+
+h1 {
+  color: #e6d5ff;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+
+
+.searchArea {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 14px 15px;
+  border: 1px solid #6c5ce7;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #f4f1ff;
+  color: #222;
+  text-transform: capitalize;
+}
+
+#cityInput::placeholder {
+  color: #777;
+  text-transform: none;
+}
+
+
+
+#searchButton {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #8e6cff;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#searchButton:hover {
+  background: #7355e8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(142, 108, 255, 0.35);
+}
+
+
+
+#locationButton {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #292452;
+  color: #dcd3ff;
+  border: 1px solid #6c5ce7;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#locationButton:hover {
+  background: #3b326d;
+  transform: translateY(-2px);
+}
+
+
+
+#weatherContainer {
+  min-height: 330px;
+  padding: 30px 20px;
+  background: rgba(20, 20, 40, 0.75);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  color: #f5f5f5;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+
+
+#weatherContainer img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  background: transparent;
+  padding: 0;
+  margin-top: 10px;
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.3));
+}
+
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .searchArea {
+    flex-direction: column;
+  }
+
+  #cityInput {
+    width: 100%;
+  }
+
+  #searchButton {
+    width: 100%;
+  }
+
+  #locationButton {
+    width: 100%;
+  }
+
+  #weatherContainer {
+    min-height: 320px;
+    padding: 25px 15px;
+  }
+}
